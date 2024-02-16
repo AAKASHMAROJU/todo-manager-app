@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="todo-list-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to TO-DO Manager</h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          name="add-item"
+          id="add-todo-item"
+          placeholder="Enter the Task u wanna do! "
+        />
+        <button type="submit" class="add">Add Item</button>
+      </form>
+    </header>
+    <main>
+      <section>
+        <h2>The Following Tasks are To Be Done</h2>
+        <div class="todo-items"></div>
+      </section>
+    </main>
+  </body>
+</html>
