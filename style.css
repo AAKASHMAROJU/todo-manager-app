@@ -75,11 +75,30 @@ h2 {
 
 .todo-item-text {
   color: #12372a;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
 .todo-item {
   display: flex;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  #todo-form {
+    display: grid;
+    justify-content: space-around;
+  }
+  .todo-item {
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .todo-item-text {
+    text-align: center;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
